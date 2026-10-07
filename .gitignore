@@ -1,3 +1,5 @@
 # Local test artifacts
 .playwright-mcp/
 .DS_Store
+.vercel
+.env*
