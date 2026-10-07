@@ -1,0 +1,324 @@
+{
+  "id": "por.2",
+  "name": "Liga Portugal 2",
+  "country": "Portugal",
+  "tier": 2,
+  "provider": {
+    "type": "ligaportugal",
+    "competition": "ligaportugalmeusuper",
+    "calendarName": "Liga Portugal Meu Super",
+    "season": "20262027"
+  },
+  "source": "https://en.wikipedia.org/wiki/2026–27_Liga_Portugal_2",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "scrapedAt": "2026-10-07T20:47:01.640Z",
+  "teams": [
+    {
+      "wikiTitle": "Académica de Coimbra (football)",
+      "name": "Académica",
+      "stadiums": [
+        {
+          "name": "Estádio Cidade de Coimbra",
+          "wikiTitle": "Estádio Cidade de Coimbra",
+          "capacity": 29622,
+          "lat": 40.20333333,
+          "lng": -8.40777778
+        }
+      ],
+      "teamId": "647",
+      "abbr": "AAC",
+      "color": null,
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Academica_Logo_a1534d81d9.png"
+    },
+    {
+      "wikiTitle": "AVS Futebol SAD",
+      "name": "AFS",
+      "stadiums": [
+        {
+          "name": "Estádio do Clube Desportivo das Aves",
+          "wikiTitle": "Estádio do CD Aves",
+          "capacity": 6230,
+          "lat": 41.366932,
+          "lng": -8.411789
+        }
+      ],
+      "teamId": "613",
+      "abbr": "AFS",
+      "color": "#bc172d",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_AVS_AF_200x200_300_5c5ea09677.png"
+    },
+    {
+      "wikiTitle": "Amarante F.C.",
+      "name": "Amarante FC",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Amarante",
+          "wikiTitle": "Estádio Municipal de Amarante",
+          "capacity": 5000,
+          "lat": 41.28222222,
+          "lng": -8.07583333
+        }
+      ],
+      "teamId": "780",
+      "abbr": "AFC",
+      "color": "#030303",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Amarante_p_NG_cores_836d6c3d62.png"
+    },
+    {
+      "wikiTitle": "S.L. Benfica B",
+      "name": "SL Benfica B",
+      "stadiums": [
+        {
+          "name": "Benfica Campus - Campo n.° 1",
+          "wikiTitle": "Benfica Campus",
+          "capacity": 2644,
+          "lat": 38.64055556,
+          "lng": -9.09194444
+        }
+      ],
+      "teamId": "623",
+      "abbr": "SLB B",
+      "color": "#ed172d",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_SL_Benfica_AF_200x200_300_0707325542.png"
+    },
+    {
+      "wikiTitle": "G.D. Chaves",
+      "name": "GD Chaves",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal Eng.° Manuel Branco Teixeira",
+          "wikiTitle": "Estádio Municipal Eng. Manuel Branco Teixeira",
+          "capacity": 8400,
+          "lat": 41.7506,
+          "lng": -7.46499
+        }
+      ],
+      "teamId": "633",
+      "abbr": "GDC",
+      "color": "#681b3d",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_GD_Chaves_AF_200x200_300_41124a3064.png"
+    },
+    {
+      "wikiTitle": "S.C. Farense",
+      "name": "SC Farense",
+      "stadiums": [
+        {
+          "name": "Estádio de São Luís",
+          "wikiTitle": "Estádio de São Luís",
+          "capacity": 7000,
+          "lat": 37.02286111,
+          "lng": -7.92844444
+        }
+      ],
+      "teamId": "621",
+      "abbr": "SCF",
+      "color": "#20222f",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_SC_Farense_AF_200x200_300_cada639191.png"
+    },
+    {
+      "wikiTitle": "C.D. Feirense",
+      "name": "CD Feirense",
+      "stadiums": [
+        {
+          "name": "Estádio Marcolino Castro",
+          "wikiTitle": "Estádio Marcolino de Castro",
+          "capacity": 5401,
+          "lat": 40.92668889,
+          "lng": -8.54581389
+        }
+      ],
+      "teamId": "628",
+      "abbr": "CDF",
+      "color": "#1a1a93",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_CD_Feirense_AF_200x200_300_314148533d.png"
+    },
+    {
+      "wikiTitle": "F.C. Felgueiras (2006)",
+      "name": "FC Felgueiras",
+      "stadiums": [
+        {
+          "name": "Estádio Dr. Machado de Matos",
+          "wikiTitle": null,
+          "capacity": 7540,
+          "lat": 41.3559664,
+          "lng": -8.1932848
+        }
+      ],
+      "teamId": "632",
+      "abbr": "FLG",
+      "color": "#2f70a9",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/EMB_FC_Felgueiras_daa04e32af.png"
+    },
+    {
+      "wikiTitle": "Leixões S.C.",
+      "name": "Leixões SC",
+      "stadiums": [
+        {
+          "name": "Estádio do Mar",
+          "wikiTitle": "Estádio do Mar",
+          "capacity": 6000,
+          "lat": 41.18396944,
+          "lng": -8.66691944
+        }
+      ],
+      "teamId": "625",
+      "abbr": "LSC",
+      "color": "#e11e26",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_Leixoes_SC_AF_200x200_300_99588b45da.png"
+    },
+    {
+      "wikiTitle": "Lusitânia F.C.",
+      "name": "L. Lourosa FC",
+      "stadiums": [
+        {
+          "name": "Estádio do Lusitânia de Lourosa FC",
+          "wikiTitle": null,
+          "capacity": 4900,
+          "lat": 40.9878602,
+          "lng": -8.546188
+        }
+      ],
+      "teamId": "642",
+      "abbr": "LLFC",
+      "color": "#FFB800",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Lusitania_e11dda0d6f.png"
+    },
+    {
+      "wikiTitle": "F.C. Penafiel",
+      "name": "FC Penafiel",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal 25 de Abril",
+          "wikiTitle": "Estádio Municipal 25 de Abril",
+          "capacity": 5230,
+          "lat": 41.2117,
+          "lng": -8.27791944
+        }
+      ],
+      "teamId": "622",
+      "abbr": "PEN",
+      "color": "#de1802",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_FC_Penafiel_AF_200x200_300_3ecf28376f.png"
+    },
+    {
+      "wikiTitle": "Portimonense S.C.",
+      "name": "Portimonense",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Portimão",
+          "wikiTitle": "Estádio Municipal de Portimão",
+          "capacity": 4961,
+          "lat": 37.13583333,
+          "lng": -8.53972222
+        }
+      ],
+      "teamId": "637",
+      "abbr": "PSC",
+      "color": "#1b1b1b",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_Portimonense_AF_200x200_300_313ef666ee.png"
+    },
+    {
+      "wikiTitle": "FC Porto B",
+      "name": "FC Porto B",
+      "stadiums": [
+        {
+          "name": "Estádio Luís Filipe Menezes",
+          "wikiTitle": null,
+          "capacity": 3800,
+          "lat": 41.0659027,
+          "lng": -8.5196692
+        }
+      ],
+      "teamId": "639",
+      "abbr": "FCP B",
+      "color": "#0073d6",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_FC_Porto_AF_200x200_300_0ff1ab3115.png"
+    },
+    {
+      "wikiTitle": "Sporting CP B",
+      "name": "Sporting CP B",
+      "stadiums": [
+        {
+          "name": "Estádio Aurélio Pereira",
+          "wikiTitle": null,
+          "capacity": 1180,
+          "lat": 38.7297198,
+          "lng": -8.8514283
+        }
+      ],
+      "teamId": "656",
+      "abbr": "SCP B",
+      "color": "#05875b",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/SPORTING_SITE_a4801efd3b.png"
+    },
+    {
+      "wikiTitle": "C.D. Tondela",
+      "name": "CD Tondela",
+      "stadiums": [
+        {
+          "name": "Estádio João Cardoso",
+          "wikiTitle": "Estádio João Cardoso",
+          "capacity": 5000,
+          "lat": 40.51204111,
+          "lng": -8.082825
+        }
+      ],
+      "teamId": "624",
+      "abbr": "CDT",
+      "color": "#009444",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_CD_Tondela_AF_200x200_300_391877e498.png"
+    },
+    {
+      "wikiTitle": "S.C.U. Torreense",
+      "name": "SCU Torreense",
+      "stadiums": [
+        {
+          "name": "Estádio Manuel Marques",
+          "wikiTitle": "Estádio Manuel Marques",
+          "capacity": 2431,
+          "lat": 39.0948969,
+          "lng": -9.2592028
+        }
+      ],
+      "teamId": "630",
+      "abbr": "SCUT",
+      "color": "#621e2e",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_SCU_Torreense_AF_200x200_300_adc9f3bae2.png"
+    },
+    {
+      "wikiTitle": "U.D. Leiria",
+      "name": "U. Leiria",
+      "stadiums": [
+        {
+          "name": "Estádio Dr. Magalhães Pessoa",
+          "wikiTitle": "Estádio Dr. Magalhães Pessoa",
+          "capacity": 23888,
+          "lat": 39.74861111,
+          "lng": -8.81305556
+        }
+      ],
+      "teamId": "629",
+      "abbr": "UDL",
+      "color": "#ff3038",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/UDL_Emblema_b71ee5f4c1.png"
+    },
+    {
+      "wikiTitle": "F.C. Vizela",
+      "name": "FC Vizela",
+      "stadiums": [
+        {
+          "name": "Estádio do Futebol Clube de Vizela",
+          "wikiTitle": "Estádio do Futebol Clube de Vizela",
+          "capacity": 6000,
+          "lat": 41.3887713,
+          "lng": -8.3099093
+        }
+      ],
+      "teamId": "627",
+      "abbr": "FCV",
+      "color": "#004194",
+      "logo": "https://www.ligaportugal.pt/backoffice/assets/Emb_FC_Vizela_AF_200x200_300_7952848f1c.png"
+    }
+  ],
+  "extraVenues": []
+}

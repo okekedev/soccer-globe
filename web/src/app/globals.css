@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* Stadium-at-night palette. The UI is always dark to sit on the night globe. */
+:root {
+  --night: #0d1b2c; /* panels */
+  --stand: #16293f; /* raised surfaces, hover */
+  --line: #24405e; /* dividers, outlines */
+  --floodlight: #eef3f8; /* primary text */
+  --steel: #8da2b7; /* secondary text */
+  --pitch: #3ddc84; /* live games only */
+  --amber: #f2b53a; /* the viewer's current selection */
+}
+
+@theme inline {
+  --animate-crest-pulse: crest-pulse 1.2s ease-in-out infinite;
+  --color-night: var(--night);
+  --color-stand: var(--stand);
+  --color-line: var(--line);
+  --color-floodlight: var(--floodlight);
+  --color-steel: var(--steel);
+  --color-pitch: var(--pitch);
+  --color-amber: var(--amber);
+  --font-sans: var(--font-barlow);
+  --font-display: var(--font-barlow-condensed);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: #000;
+  color: var(--floodlight);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+}
+
+/* Scores and clocks don't shift width as digits change. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--amber);
+}
+
+@keyframes crest-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-crest-pulse,
+  .animate-ping {
+    animation: none;
+  }
+}
+
+/* Mapbox controls in the same night palette. */
+.mapboxgl-ctrl-group {
+  background: var(--night) !important;
+  box-shadow: 0 0 0 1px var(--line) !important;
+}
+.mapboxgl-ctrl-group button + button {
+  border-top-color: var(--line) !important;
+}
+.mapboxgl-ctrl-group button .mapboxgl-ctrl-icon {
+  filter: invert(1) brightness(1.4);
+}
+.mapboxgl-ctrl-attrib {
+  background: rgb(13 27 44 / 0.7) !important;
+}
+.mapboxgl-ctrl-attrib a {
+  color: var(--steel) !important;
+}

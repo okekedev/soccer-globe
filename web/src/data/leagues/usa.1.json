@@ -1,0 +1,551 @@
+{
+  "id": "usa.1",
+  "name": "Major League Soccer",
+  "country": "United States",
+  "tier": 1,
+  "provider": {
+    "type": "espn"
+  },
+  "source": "https://en.wikipedia.org/wiki/2026_Major_League_Soccer_season",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "scrapedAt": "2026-10-07T20:46:09.072Z",
+  "teams": [
+    {
+      "wikiTitle": "Atlanta United FC",
+      "name": "Atlanta United FC",
+      "stadiums": [
+        {
+          "name": "Mercedes-Benz Stadium",
+          "wikiTitle": "Mercedes-Benz Stadium",
+          "capacity": 42500,
+          "lat": 33.75555556,
+          "lng": -84.4
+        }
+      ],
+      "teamId": "18418",
+      "abbr": "ATL",
+      "color": "#9d2235",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png"
+    },
+    {
+      "wikiTitle": "Austin FC",
+      "name": "Austin FC",
+      "stadiums": [
+        {
+          "name": "Q2 Stadium",
+          "wikiTitle": "Q2 Stadium",
+          "capacity": 20738,
+          "lat": 30.3877,
+          "lng": -97.7195
+        }
+      ],
+      "teamId": "20906",
+      "abbr": "ATX",
+      "color": "#00b140",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png"
+    },
+    {
+      "wikiTitle": "CF Montréal",
+      "name": "CF Montréal",
+      "stadiums": [
+        {
+          "name": "Saputo Stadium",
+          "wikiTitle": "Saputo Stadium",
+          "capacity": 19619,
+          "lat": 45.56305556,
+          "lng": -73.5525
+        }
+      ],
+      "teamId": "9720",
+      "abbr": "MTL",
+      "color": "#003da6",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png"
+    },
+    {
+      "wikiTitle": "Charlotte FC",
+      "name": "Charlotte FC",
+      "stadiums": [
+        {
+          "name": "Bank of America Stadium",
+          "wikiTitle": "Bank of America Stadium",
+          "capacity": 38000,
+          "lat": 35.22583333,
+          "lng": -80.85277778
+        }
+      ],
+      "teamId": "21300",
+      "abbr": "CLT",
+      "color": "#0085ca",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png"
+    },
+    {
+      "wikiTitle": "Chicago Fire FC",
+      "name": "Chicago Fire FC",
+      "stadiums": [
+        {
+          "name": "Soldier Field",
+          "wikiTitle": "Soldier Field",
+          "capacity": 24955,
+          "lat": 41.8623,
+          "lng": -87.6167
+        }
+      ],
+      "teamId": "182",
+      "abbr": "CHI",
+      "color": "#7ccdef",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
+    },
+    {
+      "wikiTitle": "Colorado Rapids",
+      "name": "Colorado Rapids",
+      "stadiums": [
+        {
+          "name": "Dick's Sporting Goods Park",
+          "wikiTitle": "Dick's Sporting Goods Park",
+          "capacity": 18061,
+          "lat": 39.80555556,
+          "lng": -104.89194444
+        }
+      ],
+      "teamId": "184",
+      "abbr": "COL",
+      "color": "#8a2432",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png"
+    },
+    {
+      "wikiTitle": "Columbus Crew",
+      "name": "Columbus Crew",
+      "stadiums": [
+        {
+          "name": "ScottsMiracle-Gro Field",
+          "wikiTitle": "ScottsMiracle-Gro Field",
+          "capacity": 20011,
+          "lat": 39.96846,
+          "lng": -83.01709
+        }
+      ],
+      "teamId": "183",
+      "abbr": "CLB",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png"
+    },
+    {
+      "wikiTitle": "D.C. United",
+      "name": "D.C. United",
+      "stadiums": [
+        {
+          "name": "Audi Field",
+          "wikiTitle": "Audi Field",
+          "capacity": 20000,
+          "lat": 38.868411,
+          "lng": -77.012869
+        }
+      ],
+      "teamId": "193",
+      "abbr": "DC",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png"
+    },
+    {
+      "wikiTitle": "FC Cincinnati",
+      "name": "FC Cincinnati",
+      "stadiums": [
+        {
+          "name": "TQL Stadium",
+          "wikiTitle": "TQL Stadium",
+          "capacity": 26000,
+          "lat": 39.11138889,
+          "lng": -84.52222222
+        }
+      ],
+      "teamId": "18267",
+      "abbr": "CIN",
+      "color": "#003087",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png"
+    },
+    {
+      "wikiTitle": "FC Dallas",
+      "name": "FC Dallas",
+      "stadiums": [
+        {
+          "name": "Toyota Stadium",
+          "wikiTitle": "Toyota Stadium (Texas)",
+          "capacity": 20500,
+          "lat": 33.15444444,
+          "lng": -96.83527778
+        }
+      ],
+      "teamId": "185",
+      "abbr": "DAL",
+      "color": "#c6093b",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png"
+    },
+    {
+      "wikiTitle": "Houston Dynamo FC",
+      "name": "Houston Dynamo FC",
+      "stadiums": [
+        {
+          "name": "Shell Energy Stadium",
+          "wikiTitle": "Shell Energy Stadium",
+          "capacity": 22039,
+          "lat": 29.7522,
+          "lng": -95.3524
+        }
+      ],
+      "teamId": "6077",
+      "abbr": "HOU",
+      "color": "#ff6b00",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png"
+    },
+    {
+      "wikiTitle": "Inter Miami CF",
+      "name": "Inter Miami CF",
+      "stadiums": [
+        {
+          "name": "Nu Stadium",
+          "wikiTitle": "Nu Stadium",
+          "capacity": 26700,
+          "lat": 25.7931,
+          "lng": -80.259
+        }
+      ],
+      "teamId": "20232",
+      "abbr": "MIA",
+      "color": "#231f20",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
+    },
+    {
+      "wikiTitle": "LA Galaxy",
+      "name": "LA Galaxy",
+      "stadiums": [
+        {
+          "name": "Dignity Health Sports Park",
+          "wikiTitle": "Dignity Health Sports Park",
+          "capacity": 27000,
+          "lat": 33.864,
+          "lng": -118.261
+        }
+      ],
+      "teamId": "187",
+      "abbr": "LA",
+      "color": "#00235d",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png"
+    },
+    {
+      "wikiTitle": "Los Angeles FC",
+      "name": "LAFC",
+      "stadiums": [
+        {
+          "name": "BMO Stadium",
+          "wikiTitle": "BMO Stadium",
+          "capacity": 22000,
+          "lat": 34.01277778,
+          "lng": -118.28408333
+        }
+      ],
+      "teamId": "18966",
+      "abbr": "LAFC",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png"
+    },
+    {
+      "wikiTitle": "Minnesota United FC",
+      "name": "Minnesota United FC",
+      "stadiums": [
+        {
+          "name": "Allianz Field",
+          "wikiTitle": "Allianz Field",
+          "capacity": 19400,
+          "lat": 44.95311111,
+          "lng": -93.16472222
+        }
+      ],
+      "teamId": "17362",
+      "abbr": "MIN",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png"
+    },
+    {
+      "wikiTitle": "Nashville SC",
+      "name": "Nashville SC",
+      "stadiums": [
+        {
+          "name": "Geodis Park",
+          "wikiTitle": "Geodis Park",
+          "capacity": 30000,
+          "lat": 36.13008333,
+          "lng": -86.766
+        }
+      ],
+      "teamId": "18986",
+      "abbr": "NSH",
+      "color": "#ece83a",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png"
+    },
+    {
+      "wikiTitle": "New England Revolution",
+      "name": "New England Revolution",
+      "stadiums": [
+        {
+          "name": "Gillette Stadium",
+          "wikiTitle": "Gillette Stadium",
+          "capacity": 20000,
+          "lat": 42.091,
+          "lng": -71.264
+        }
+      ],
+      "teamId": "189",
+      "abbr": "NE",
+      "color": "#022166",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
+    },
+    {
+      "wikiTitle": "New York City FC",
+      "name": "New York City FC",
+      "stadiums": [
+        {
+          "name": "Yankee Stadium",
+          "wikiTitle": "Yankee Stadium",
+          "capacity": 28743,
+          "lat": 40.82916667,
+          "lng": -73.92638889
+        },
+        {
+          "name": "Citi Field",
+          "wikiTitle": "Citi Field",
+          "capacity": 41992,
+          "lat": 40.75694444,
+          "lng": -73.84583333
+        }
+      ],
+      "teamId": "17606",
+      "abbr": "NYC",
+      "color": "#9fd2ff",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png"
+    },
+    {
+      "wikiTitle": "New York Red Bulls",
+      "name": "Red Bull New York",
+      "stadiums": [
+        {
+          "name": "Sports Illustrated Stadium",
+          "wikiTitle": "Sports Illustrated Stadium",
+          "capacity": 25000,
+          "lat": 40.73666667,
+          "lng": -74.15027778
+        }
+      ],
+      "teamId": "190",
+      "abbr": "RBNY",
+      "color": "#ba0c2f",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png"
+    },
+    {
+      "wikiTitle": "Orlando City SC",
+      "name": "Orlando City SC",
+      "stadiums": [
+        {
+          "name": "Inter&Co Stadium",
+          "wikiTitle": "Inter&Co Stadium",
+          "capacity": 25500,
+          "lat": 28.5411,
+          "lng": -81.3893
+        }
+      ],
+      "teamId": "12011",
+      "abbr": "ORL",
+      "color": "#60269e",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png"
+    },
+    {
+      "wikiTitle": "Philadelphia Union",
+      "name": "Philadelphia Union",
+      "stadiums": [
+        {
+          "name": "Subaru Park",
+          "wikiTitle": "Subaru Park",
+          "capacity": 18500,
+          "lat": 39.83222222,
+          "lng": -75.37888889
+        }
+      ],
+      "teamId": "10739",
+      "abbr": "PHI",
+      "color": "#051f31",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png"
+    },
+    {
+      "wikiTitle": "Portland Timbers",
+      "name": "Portland Timbers",
+      "stadiums": [
+        {
+          "name": "Providence Park",
+          "wikiTitle": "Providence Park",
+          "capacity": 25218,
+          "lat": 45.52138889,
+          "lng": -122.69166667
+        }
+      ],
+      "teamId": "9723",
+      "abbr": "POR",
+      "color": "#2c5234",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png"
+    },
+    {
+      "wikiTitle": "Real Salt Lake",
+      "name": "Real Salt Lake",
+      "stadiums": [
+        {
+          "name": "America First Field",
+          "wikiTitle": "America First Field",
+          "capacity": 20213,
+          "lat": 40.5829,
+          "lng": -111.8934
+        }
+      ],
+      "teamId": "4771",
+      "abbr": "RSL",
+      "color": "#a32035",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png"
+    },
+    {
+      "wikiTitle": "San Diego FC",
+      "name": "San Diego FC",
+      "stadiums": [
+        {
+          "name": "Snapdragon Stadium",
+          "wikiTitle": "Snapdragon Stadium",
+          "capacity": 35000,
+          "lat": 32.78444444,
+          "lng": -117.12277778
+        }
+      ],
+      "teamId": "22529",
+      "abbr": "SD",
+      "color": "#697a7C",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png"
+    },
+    {
+      "wikiTitle": "San Jose Earthquakes",
+      "name": "San Jose Earthquakes",
+      "stadiums": [
+        {
+          "name": "PayPal Park",
+          "wikiTitle": "PayPal Park",
+          "capacity": 18000,
+          "lat": 37.35138889,
+          "lng": -121.925
+        }
+      ],
+      "teamId": "191",
+      "abbr": "SJ",
+      "color": "#003da6",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png"
+    },
+    {
+      "wikiTitle": "Seattle Sounders FC",
+      "name": "Seattle Sounders FC",
+      "stadiums": [
+        {
+          "name": "Lumen Field",
+          "wikiTitle": "Lumen Field",
+          "capacity": 37722,
+          "lat": 47.5952,
+          "lng": -122.3316
+        }
+      ],
+      "teamId": "9726",
+      "abbr": "SEA",
+      "color": "#2dc84d",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png"
+    },
+    {
+      "wikiTitle": "Sporting Kansas City",
+      "name": "Sporting Kansas City",
+      "stadiums": [
+        {
+          "name": "Sporting Park",
+          "wikiTitle": "Sporting Park",
+          "capacity": 18467,
+          "lat": 39.12174,
+          "lng": -94.82318
+        }
+      ],
+      "teamId": "186",
+      "abbr": "SKC",
+      "color": "#a7c6ed",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png"
+    },
+    {
+      "wikiTitle": "St. Louis City SC",
+      "name": "St. Louis CITY SC",
+      "stadiums": [
+        {
+          "name": "Energizer Park",
+          "wikiTitle": "Energizer Park",
+          "capacity": 22423,
+          "lat": 38.63138889,
+          "lng": -90.21027778
+        }
+      ],
+      "teamId": "21812",
+      "abbr": "STL",
+      "color": "#ec1458",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png"
+    },
+    {
+      "wikiTitle": "Toronto FC",
+      "name": "Toronto FC",
+      "stadiums": [
+        {
+          "name": "BMO Field",
+          "wikiTitle": "BMO Field",
+          "capacity": 28351,
+          "lat": 43.63333333,
+          "lng": -79.41861111
+        }
+      ],
+      "teamId": "7318",
+      "abbr": "TOR",
+      "color": "#aa182c",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png"
+    },
+    {
+      "wikiTitle": "Vancouver Whitecaps FC",
+      "name": "Vancouver Whitecaps",
+      "stadiums": [
+        {
+          "name": "BC Place",
+          "wikiTitle": "BC Place",
+          "capacity": 22120,
+          "lat": 49.27666667,
+          "lng": -123.11194444
+        }
+      ],
+      "teamId": "9727",
+      "abbr": "VAN",
+      "color": "#ffffff",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png"
+    }
+  ],
+  "extraVenues": [
+    {
+      "name": "Levi's Stadium",
+      "wikiTitle": "Levi's Stadium",
+      "lat": 37.403,
+      "lng": -121.97
+    },
+    {
+      "name": "SeatGeek Stadium",
+      "wikiTitle": "SeatGeek Stadium",
+      "lat": 41.76472222,
+      "lng": -87.80611111
+    },
+    {
+      "name": "Stade Saputo",
+      "wikiTitle": "Saputo Stadium",
+      "lat": 45.56305556,
+      "lng": -73.5525
+    }
+  ]
+}

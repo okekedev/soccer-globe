@@ -1,0 +1,321 @@
+{
+  "id": "por.1",
+  "name": "Liga Portugal",
+  "country": "Portugal",
+  "tier": 1,
+  "provider": {
+    "type": "espn"
+  },
+  "source": "https://en.wikipedia.org/wiki/2026–27_Primeira_Liga",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "scrapedAt": "2026-10-07T20:46:10.365Z",
+  "teams": [
+    {
+      "wikiTitle": "Académico de Viseu F.C.",
+      "name": "Académico de Viseu",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal do Fontelo",
+          "wikiTitle": "Estádio do Fontelo",
+          "capacity": 6912,
+          "lat": 40.65944444,
+          "lng": -7.90083333
+        }
+      ],
+      "teamId": "21607",
+      "abbr": "ACV",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21607.png"
+    },
+    {
+      "wikiTitle": "F.C. Alverca",
+      "name": "Alverca",
+      "stadiums": [
+        {
+          "name": "Complexo Desportivo FC Alverca",
+          "wikiTitle": null,
+          "capacity": 6932,
+          "lat": 38.89788,
+          "lng": -9.0375907
+        }
+      ],
+      "teamId": "21613",
+      "abbr": "ALV",
+      "color": "#0047AB",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
+    },
+    {
+      "wikiTitle": "F.C. Arouca",
+      "name": "Arouca",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Arouca",
+          "wikiTitle": "Estádio Municipal de Arouca",
+          "capacity": 5000,
+          "lat": 40.933,
+          "lng": -8.2503
+        }
+      ],
+      "teamId": "15784",
+      "abbr": "FCA",
+      "color": "#ffea01",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15784.png"
+    },
+    {
+      "wikiTitle": "S.L. Benfica",
+      "name": "Benfica",
+      "stadiums": [
+        {
+          "name": "Estádio da Luz",
+          "wikiTitle": "Estádio da Luz",
+          "capacity": 68100,
+          "lat": 38.7527,
+          "lng": -9.1847
+        }
+      ],
+      "teamId": "1929",
+      "abbr": "SLB",
+      "color": "#ca281d",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png"
+    },
+    {
+      "wikiTitle": "S.C. Braga",
+      "name": "Braga",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Braga",
+          "wikiTitle": "Estádio Municipal de Braga",
+          "capacity": 30286,
+          "lat": 41.5620136,
+          "lng": -8.4330018
+        }
+      ],
+      "teamId": "2994",
+      "abbr": "SCB",
+      "color": "#de1f26",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png"
+    },
+    {
+      "wikiTitle": "Casa Pia A.C.",
+      "name": "Casa Pia",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Rio Maior",
+          "wikiTitle": "Estádio Municipal de Rio Maior",
+          "capacity": 7000,
+          "lat": 39.34444444,
+          "lng": -8.93527778
+        }
+      ],
+      "teamId": "21581",
+      "abbr": "CPAC",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
+    },
+    {
+      "wikiTitle": "G.D. Estoril Praia",
+      "name": "Estoril",
+      "stadiums": [
+        {
+          "name": "Estádio António Coimbra da Mota",
+          "wikiTitle": "Estádio António Coimbra da Mota",
+          "capacity": 5094,
+          "lat": 38.71583333,
+          "lng": -9.40638889
+        }
+      ],
+      "teamId": "12216",
+      "abbr": "EPF",
+      "color": "#ffea01",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12216.png"
+    },
+    {
+      "wikiTitle": "C.F. Estrela da Amadora",
+      "name": "Estrela",
+      "stadiums": [
+        {
+          "name": "Estádio José Gomes",
+          "wikiTitle": "Estádio José Gomes",
+          "capacity": 9288,
+          "lat": 38.75194444,
+          "lng": -9.22805556
+        }
+      ],
+      "teamId": "21610",
+      "abbr": "EST",
+      "color": "#3B8132",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21610.png"
+    },
+    {
+      "wikiTitle": "F.C. Famalicão",
+      "name": "FC Famalicao",
+      "stadiums": [
+        {
+          "name": "Estádio Municipal de Famalicão",
+          "wikiTitle": "Estádio Municipal 22 de Junho",
+          "capacity": 5186,
+          "lat": 41.40138889,
+          "lng": -8.5225
+        }
+      ],
+      "teamId": "12698",
+      "abbr": "FCF",
+      "color": "#FFFFFF",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12698.png"
+    },
+    {
+      "wikiTitle": "Gil Vicente F.C.",
+      "name": "Gil Vicente",
+      "stadiums": [
+        {
+          "name": "Estádio Cidade de Barcelos",
+          "wikiTitle": "Estádio Cidade de Barcelos",
+          "capacity": 12046,
+          "lat": 41.551,
+          "lng": -8.623
+        }
+      ],
+      "teamId": "3699",
+      "abbr": "GVFC",
+      "color": "#de1f26",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3699.png"
+    },
+    {
+      "wikiTitle": "C.S. Marítimo",
+      "name": "Maritimo",
+      "stadiums": [
+        {
+          "name": "Estádio do Marítimo",
+          "wikiTitle": "Estádio do Marítimo",
+          "capacity": 10600,
+          "lat": 32.64556111,
+          "lng": -16.92833056
+        }
+      ],
+      "teamId": "552",
+      "abbr": "MAR",
+      "color": "#008222",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png"
+    },
+    {
+      "wikiTitle": "Moreirense F.C.",
+      "name": "Moreirense",
+      "stadiums": [
+        {
+          "name": "Estádio Comendador Joaquim de Almeida Freitas",
+          "wikiTitle": "Parque de Jogos Comendador Joaquim de Almeida Freitas",
+          "capacity": 6150,
+          "lat": 41.37805556,
+          "lng": -8.35472222
+        }
+      ],
+      "teamId": "3696",
+      "abbr": "MFC",
+      "color": "#288A00",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3696.png"
+    },
+    {
+      "wikiTitle": "C.D. Nacional",
+      "name": "C.D. Nacional",
+      "stadiums": [
+        {
+          "name": "Estádio da Madeira",
+          "wikiTitle": "Estádio da Madeira",
+          "capacity": 5200,
+          "lat": 32.670625,
+          "lng": -16.883525
+        }
+      ],
+      "teamId": "3472",
+      "abbr": "CDN",
+      "color": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3472.png"
+    },
+    {
+      "wikiTitle": "FC Porto",
+      "name": "FC Porto",
+      "stadiums": [
+        {
+          "name": "Estádio do Dragão",
+          "wikiTitle": "Estádio do Dragão",
+          "capacity": 50033,
+          "lat": 41.1618,
+          "lng": -8.5839
+        }
+      ],
+      "teamId": "437",
+      "abbr": "FCP",
+      "color": "#0000dd",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+    },
+    {
+      "wikiTitle": "Rio Ave F.C.",
+      "name": "Rio Ave",
+      "stadiums": [
+        {
+          "name": "Estadio dos Arcos",
+          "wikiTitle": "Estádio do Rio Ave FC",
+          "capacity": 5300,
+          "lat": 41.36277778,
+          "lng": -8.74027778
+        }
+      ],
+      "teamId": "3822",
+      "abbr": "RAFC",
+      "color": "#3b8649",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3822.png"
+    },
+    {
+      "wikiTitle": "C.D. Santa Clara",
+      "name": "Santa Clara",
+      "stadiums": [
+        {
+          "name": "Estádio de São Miguel",
+          "wikiTitle": "Estádio de São Miguel (Ponta Delgada)",
+          "capacity": 12500,
+          "lat": 37.76361111,
+          "lng": -25.6225
+        }
+      ],
+      "teamId": "12215",
+      "abbr": "CDSC",
+      "color": "#C60000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12215.png"
+    },
+    {
+      "wikiTitle": "Sporting CP",
+      "name": "Sporting CP",
+      "stadiums": [
+        {
+          "name": "Estádio José Alvalade",
+          "wikiTitle": "Estádio José Alvalade",
+          "capacity": 52095,
+          "lat": 38.7612216,
+          "lng": -9.1643649
+        }
+      ],
+      "teamId": "2250",
+      "abbr": "SCP",
+      "color": "#008127",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
+    },
+    {
+      "wikiTitle": "Vitória S.C.",
+      "name": "Vitória de Guimaraes",
+      "stadiums": [
+        {
+          "name": "Estádio D. Afonso Henriques",
+          "wikiTitle": "Estádio D. Afonso Henriques",
+          "capacity": 30029,
+          "lat": 41.44583333,
+          "lng": -8.30111111
+        }
+      ],
+      "teamId": "5309",
+      "abbr": "VSC",
+      "color": "#ffffff",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5309.png"
+    }
+  ],
+  "extraVenues": []
+}
