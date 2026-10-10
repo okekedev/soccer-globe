@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Map, { Marker, NavigationControl, type MapRef } from "react-map-gl/mapbox";
+import Map, { AttributionControl, Layer, Marker, NavigationControl, Source, type MapRef } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
 import type mapboxgl from "mapbox-gl";
 import type { LeagueSummary } from "@/lib/leagues";
@@ -343,6 +343,39 @@ export default function MatchGlobe({ leagues }: { leagues: LeagueSummary[] }) {
   }, [matches, past]);
 
   const venue = venues.find((v) => v.key === venueKey) ?? null;
+
+  // Drive from the viewer to the open stadium: the time shows in the panel, the route on the map.
+  const driveKey = me && venue ? `${me.lat.toFixed(2)},${me.lng.toFixed(2)}→${venue.lat},${venue.lng}` : null;
+  const [driveResult, setDriveResult] = useState<{ key: string; drive: Drive } | null>(null);
+  useEffect(() => {
+    if (!me || !venue || !driveKey) return;
+    let cancelled = false;
+    fetchDrive(me, venue)
+      .catch((): Drive => "none")
+      .then((drive) => !cancelled && setDriveResult({ key: driveKey, drive }));
+    return () => {
+      cancelled = true;
+    };
+  }, [driveKey]); // eslint-disable-line react-hooks/exhaustive-deps -- driveKey already captures me + venue
+  const drive = driveKey && driveResult?.key === driveKey ? driveResult.drive : null;
+  const route = drive && drive !== "none" ? drive.line : null;
+
+  // Pull back so the whole drive fits beside the panel.
+  function showRoute() {
+    if (!route || !map) return;
+    const lngs = route.map((c) => c[0]), lats = route.map((c) => c[1]);
+    const desktop = window.innerWidth >= 640;
+    map.fitBounds(
+      [[Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]],
+      {
+        padding: desktop ? { top: 80, bottom: 80, left: 80, right: 404 + 80 } : { top: 60, bottom: window.innerHeight * 0.6 + 40, left: 40, right: 40 },
+        pitch: 0,
+        bearing: 0,
+        duration: 2500,
+        essential: true,
+      },
+    );
+  }
   const liveCount = venues.filter((v) => v.game.status === "in").length;
 
   return (
@@ -363,6 +396,7 @@ export default function MatchGlobe({ leagues }: { leagues: LeagueSummary[] }) {
         mapStyle={LIGHTS[light].style}
         fog={FOG[light]}
         projection="globe"
+        attributionControl={false} // replaced by the compact control below
         // Zoom on the middle of the screen, not the pointer, so a centered stadium stays centered.
         scrollZoom={{ around: "center" }}
         touchZoomRotate={{ around: "center" }}
@@ -370,6 +404,14 @@ export default function MatchGlobe({ leagues }: { leagues: LeagueSummary[] }) {
         onClick={closeVenue}
       >
         <NavigationControl position="bottom-left" />
+        {/* Mapbox's required credit, as a small ⓘ that expands on tap */}
+        <AttributionControl compact position="bottom-right" />
+        {route && (
+          <Source id="drive-route" type="geojson" data={{ type: "Feature", properties: {}, geometry: { type: "LineString", coordinates: route } }}>
+            <Layer id="drive-route-casing" type="line" slot="top" layout={{ "line-cap": "round", "line-join": "round" }} paint={{ "line-color": "#ffffff", "line-width": 8, "line-opacity": 0.9, "line-emissive-strength": 1 }} />
+            <Layer id="drive-route-line" type="line" slot="top" layout={{ "line-cap": "round", "line-join": "round" }} paint={{ "line-color": "#3b82f6", "line-width": 5, "line-emissive-strength": 1 }} />
+          </Source>
+        )}
         {me && (
           <Marker longitude={me.lng} latitude={me.lat} anchor="center">
             <UserDot />
@@ -490,7 +532,7 @@ export default function MatchGlobe({ leagues }: { leagues: LeagueSummary[] }) {
               <h2 className="font-display text-2xl font-semibold leading-tight">{venue.name}</h2>
               {venue.city && venue.city !== venue.name && <p className="text-sm text-steel">{venue.city}</p>}
               {me ? (
-                <DriveTime from={me} to={venue} />
+                <DriveTime from={me} to={venue} drive={drive} onShowRoute={route ? showRoute : undefined} />
               ) : geo === "denied" ? (
                 <p className="mt-1.5 text-sm text-steel">Location is blocked in your browser settings.</p>
               ) : (
@@ -754,7 +796,7 @@ const fmtDuration = (sec: number) => {
   return h ? `${h} hr ${m} min` : `${m} min`;
 };
 
-type Drive = { sec: number; km: number } | "none";
+type Drive = { sec: number; km: number; line: [number, number][] } | "none";
 // Rounded origin + destination → result, so small GPS jitter doesn't refetch.
 const driveCache: Record<string, Promise<Drive>> = {};
 
@@ -762,27 +804,16 @@ function fetchDrive(from: LatLng, to: LatLng): Promise<Drive> {
   const f = `${from.lng.toFixed(2)},${from.lat.toFixed(2)}`;
   const t = `${to.lng.toFixed(5)},${to.lat.toFixed(5)}`;
   return (driveCache[`${f};${t}`] ??= fetch(
-    `https://api.mapbox.com/directions/v5/mapbox/driving-traffic/${f};${t}?overview=false&access_token=${MAPBOX_TOKEN}`,
+    `https://api.mapbox.com/directions/v5/mapbox/driving-traffic/${f};${t}?overview=full&geometries=geojson&access_token=${MAPBOX_TOKEN}`,
   )
     .then((r) => r.json())
-    .then((d): Drive => (d.code === "Ok" && d.routes?.[0] ? { sec: d.routes[0].duration, km: d.routes[0].distance / 1000 } : "none")));
+    .then((d): Drive => (d.code === "Ok" && d.routes?.[0]
+          ? { sec: d.routes[0].duration, km: d.routes[0].distance / 1000, line: d.routes[0].geometry.coordinates }
+          : "none")));
 }
 
-/** Estimated drive time from the viewer to the stadium (live traffic), no route drawn. */
-function DriveTime({ from, to }: { from: LatLng; to: LatLng }) {
-  const key = `${from.lat.toFixed(2)},${from.lng.toFixed(2)}→${to.lat},${to.lng}`;
-  const [result, setResult] = useState<{ key: string; drive: Drive } | null>(null);
-  useEffect(() => {
-    let cancelled = false;
-    fetchDrive(from, to)
-      .catch((): Drive => "none")
-      .then((drive) => !cancelled && setResult({ key, drive }));
-    return () => {
-      cancelled = true;
-    };
-  }, [key, from, to]);
-
-  const drive = result?.key === key ? result.drive : null;
+/** Estimated drive time from the viewer to the stadium (live traffic); the route itself is drawn on the map. */
+function DriveTime({ from, to, drive, onShowRoute }: { from: LatLng; to: LatLng; drive: Drive | null; onShowRoute?: () => void }) {
   return (
     <p className="mt-1.5 text-sm text-floodlight/85">
       {drive === null
@@ -790,6 +821,14 @@ function DriveTime({ from, to }: { from: LatLng; to: LatLng }) {
         : drive === "none"
           ? `No driving route from you, ${fmtDistance(haversineKm(from, to))} away`
           : `${fmtDuration(drive.sec)} drive from you (${fmtDistance(drive.km)})`}
+      {onShowRoute && (
+        <>
+          {" · "}
+          <button onClick={onShowRoute} className="text-amber hover:underline">
+            Show route
+          </button>
+        </>
+      )}
     </p>
   );
 }
